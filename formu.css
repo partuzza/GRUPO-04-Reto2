@@ -1,0 +1,63 @@
+/* === SELECCIÓN DE TIPO DE RESERVA === */
+.seleccion_contenedor {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+}
+
+.seleccion_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-decoration: none; /* importante para enlaces */
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 300px;
+    padding: 20px;
+}
+
+.seleccion_card img {
+    width: 100%;
+    max-width: 300px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.seleccion_card h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.seleccion_card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.seleccion_card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Hover de tarjeta */
+.seleccion_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Título principal de la página */
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2em;
+    color: #333;
+}

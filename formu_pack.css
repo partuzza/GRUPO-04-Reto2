@@ -1,0 +1,202 @@
+/* ===== RESET BASICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  padding: 20px;
+  color: #333;
+}
+
+/* ===== TITULO PRINCIPAL ===== */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+/* ===== FORMULARIO ===== */
+.reserva_form {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* ===== DATOS DEL USUARIO ===== */
+.usuario_caja {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.usuario_caja legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2c3e50;
+  padding: 0 10px;
+}
+
+.usuario_caja label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.usuario_caja input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* ===== GRUPOS DE SERVICIO ===== */
+.grupo_servicio_caja {
+  background: #fff;
+  padding: 20px 20px 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.grupo_servicio_caja h2 {
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* ===== ACTIVIDADES GRID ===== */
+.actividades_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.actividad_card {
+  background: #fefefe;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.actividad_card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.actividad_card h3 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.actividad_card p {
+  font-size: 0.95em;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.actividad_card input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-top: 5px;
+}
+
+/* Hover efectos */
+.actividad_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== PACKS SPA ===== */
+.packs_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.pack_card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pack_card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.pack_card h3 {
+  font-size: 1.3em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.pack_card ul {
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.pack_card ul li {
+  font-size: 0.95em;
+  margin-bottom: 5px;
+}
+
+.pack_card p {
+  font-size: 0.95em;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Hover efectos */
+.pack_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== BOTON RESERVAR ===== */
+input[type="submit"] {
+  background: #27ae60;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 15px 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: #2ecc71;
+  transform: translateY(-3px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 768px) {
+  .actividades_grid, .packs_grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
