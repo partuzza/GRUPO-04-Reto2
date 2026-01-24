@@ -1,3 +1,10 @@
+:root{
+   --color-1: #f3eee5; 
+  --color-2: #D6E7EE; 
+  --color-3: #e9f5e9;
+  --color-4: #ebecec; 
+
+}
 body{
 padding:0;
 margin:0;
@@ -43,27 +50,50 @@ color: black;
 
 
 h1 {
-text-align: left;
+text-align:center;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 30px;
-font-weight:50;  
+font-weight:25;  
 margin-top:40px;
-margin-left:20px;
-
+text-transform: uppercase;
 }
 
 hr{
-  width:700px ;
-  margin-left:0;
-
+  width:1000px ;
+  text-align: center;
 }
+
 h2 {
 text-align: center;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 20px;
-font-weight:100;  
+font-size: 25px;
+font-weight:500;
+
 }
 
+h3{
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 20px;
+font-weight:100; 
+text-decoration:underline;
+ margin-top: 10px;    
+}
+
+h4{
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 17px;
+font-weight:100; 
+}
+
+h5{
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 16px;
+font-weight:bold;
+
+}
 .banner-video {
     position: relative;
     width: 100%;
@@ -185,6 +215,7 @@ font-weight:100;
     background: transparent;
     padding: 20px 0;
     position: relative;
+    margin-top:25px;
 }
 
 /* El contenedor que realmente se mueve */
@@ -217,6 +248,9 @@ font-weight:100;
 .tarjeta-info {
     padding: 15px;
     text-align: center;
+    line-height: 1.2;
+    gap:2px;
+    
 }
 
 /* La magia del movimiento */
@@ -229,3 +263,138 @@ font-weight:100;
         transform: translateX(calc(-320px * 7));
     }
 }
+
+/* PACKS*/
+
+.tarjetas-packs{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  gap:20px;
+  text-align: center;
+  
+ 
+}
+.tarjeta-p{
+background-color: var(--color-4);
+border-radius: 10px;
+width: auto;
+height: auto;
+margin-left: 20px;
+margin-right: 20px;
+margin-top:25px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+padding: 20px;
+}
+.tarjeta-p:hover {
+    transform: translateY(-10px); 
+    box-shadow: var(--color-3); 
+    background-color:var(--color-2);
+}
+
+.tarjeta-p img{
+border-radius: 10px;
+width:300px;
+height:250px;
+}
+
+.tarjeta-p h4 strong {
+  font-weight: bold;
+}
+.tarjeta-p h4 {
+    margin-top: 5px;    
+    margin-bottom: 5px; 
+    line-height: 1.2;
+}
+.lista{
+  font-size: 16px;
+  list-style-position: inside;
+  text-align: center;
+  padding: 0 10px 0 10px;
+  
+}
+p{
+  font-size:18px;
+}
+
+/* PLANES */
+.tarjetas-plan{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:20px;
+  text-align: center;
+  
+ 
+}
+.plan{
+background-color: var(--color-1);
+border-radius: 10px;
+border-color:rgb(114, 75, 24);
+width: auto;
+height: auto;
+margin-left: 20px;
+margin-right: 20px;
+margin-top:25px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+padding: 20px;
+}
+
+
+
+.plan:hover {
+    transform: translateY(-10px); 
+    box-shadow: var(--color-3); 
+    background-color: var(--color-4);
+}
+
+.plan img{
+border-radius: 10px;
+width:300px;
+height:250px;
+}
+
+.plan h4 strong {
+  font-weight: bold;
+}
+.plan h4 {
+    margin-top: 5px;    
+    margin-bottom: 5px; 
+    line-height: 1.2;
+}
+.lista{
+  font-size: 16px;
+  list-style-position: inside;
+  text-align: center;
+  padding: 0 10px 0 10px;
+  
+}
+p{
+  font-size:18px;
+}
+
+/*Pie de página*/
+.Pie-de-pagina {
+    background-color:var(--color-4);
+    color: #000000;
+    padding: 40px 0 20px 0;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    display: flex;      
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+
+.footer-section {
+    margin: 20px;
+    min-width: 200px;
+}
+.footer-section img{
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+

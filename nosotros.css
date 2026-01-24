@@ -1,6 +1,11 @@
-.menu{
+body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+.menu{
     list-style: none;
     padding:0;
     display:flex;
@@ -20,17 +25,19 @@
 
 .cajatextoportada{
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 10;
     font-size: 100px;
 }
 
 .fotosnosotros{
-display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: dodgerblue;
+    display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  background-color: rgb(255, 0, 0);
   padding: 5px;
   gap: 5px;
+  width: 800px;       /* ancho del grid */
+  margin: auto;  /* esto es pa centrar el grid */
+  transition: transform 0.3s ease
 }
 .fotosnosotros div {
   background-color: #f1f1f1;
@@ -39,7 +46,58 @@ display: grid;
   font-size: 30px;
   text-align: center;
 }
-.Nahia{
+.Nahia {
+    display: flex;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
+
 }
+
+.Nahia img {
+padding-left: 38px; 
+}
+
+.Paul {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.Sara{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.Sebastian{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.Kevin{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.texto {
+    flex: 1;                  /* toma todo el espacio disponible al lado de la imagen */
+}
+
+.texto h1 {
+    text-align: center;       /* centrado dentro del contenedor .texto */
+    margin-bottom: 10px;
+}
+
+.texto p {
+    text-align: justify;      /* párrafo justificado */}
+
+.portada-container {
+    width: 100vw;                       /* ocupa todo el ancho de la pantalla */
+    height: 50vh;                        /* altura: mitad de la pantalla */
+    background-image: url('img/frontal - para portada.png'); /* tu imagen */
+    background-size: cover;              /* llena el contenedor sin deformarse */
+    background-position: center;         /* centra la imagen */
+    background-repeat: no-repeat;        /* evita repetición */
+}
+
+h1 {
+font-size: 2rem;
+}
+

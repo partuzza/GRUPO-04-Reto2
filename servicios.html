@@ -1,116 +1,170 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Nuestros Servicios</title>
-<link rel="stylesheet" href="servicios.css">
+  <meta charset="UTF-8">
+  <title>Nuestros Servicios</title>
+  <link rel="stylesheet" href="servicios.css">
 </head>
 <body>
 
-<header class="header_fijo">
-  <div class="titulo_header"><h1>Nuestros Servicios</h1></div>
-  <nav class="nav_menu">
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="nosotros.html">Liora</a></li>
-      <li><a href="formu.html">Reserva</a></li>
-<li class="menu_login">
-  <a href="#">Login ▾</a>
-  <ul class="submenu_login">
-    <li><a href="loginUSU.html">Usuario</a></li>
-    <li><a href="loginCLI.html">Operador</a></li>
-  </ul>
-</li>
-    </ul>
-  </nav>
-</header>
+  <!-- ===== HEADER ===== -->
+  <header class="header_fijo">
+    <div class="titulo_header">
+      <h1>Nuestros Servicios</h1>
+    </div>
 
-<main class="servicios_contenedor">
+    <nav class="nav_menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Liora</a></li>
+        <li><a href="formu.html">Reserva</a></li>
 
+        <li class="menu_login">
+          <a href="#">Login ▾</a>
+          <ul class="submenu_login">
+            <li><a href="loginUSU.html">Usuario</a></li>
+            <li><a href="loginCLI.html">Operador</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <section class="servicio">
-    <h2 class="nombre_servicio">Masajes terapéuticos o relajantes</h2>
-    <div class="contenido_servicio contenido_der">
-      <div class="descripcion_servicio">
-        Relájate con masajes sueco, descontracturante, deportivo o con piedras calientes. Mejora la circulación, libera estrés y renueva tu energía. Cada sesión está diseñada para bienestar físico y mental.
-      </div>
-      <div class="carrusel">
-        <div class="carrusel_imagenes">
-          <img src="ruta/foto1.jpg" alt="Masaje 1">
-          <img src="ruta/foto1b.jpg" alt="Masaje 2">
-          <img src="ruta/foto1c.jpg" alt="Masaje 3">
+  <!-- ===== CONTENIDO PRINCIPAL ===== -->
+  <main class="servicios_contenedor">
+
+    <!-- MASAJES -->
+    <section class="servicio">
+      <h2 class="nombre_servicio">Masajes</h2>
+
+      <div class="contenido_servicio contenido_der">
+        <div class="descripcion_servicio">
+          Disfruta de masajes diseñados para relajar el cuerpo, aliviar tensiones y mejorar el bienestar físico y mental.
+          <ul>
+            <li>Masaje relajante (30 y 45 min)</li>
+            <li>Masaje terapéutico descontracturante o deportivo (60 min)</li>
+            <li>Masaje premium (90 min)</li>
+            <li>Masaje facial y craneal (15–20 min)</li>
+            <li>Masaje de manos y pies (15–20 min)</li>
+            <li>Masaje sueco</li>
+          </ul>
+        </div>
+
+        <div class="carrusel">
+          <div class="carrusel_imagenes">
+            <img src="ruta/foto1.jpg" alt="Masaje relajante">
+            <img src="ruta/foto1b.jpg" alt="Masaje terapéutico">
+            <img src="ruta/foto1c.jpg" alt="Masaje premium">
+            <img src="ruta/foto1c.jpg" alt="Masaje premium">
+           <img src="ruta/foto1c.jpg" alt="Masaje premium">
+           <img src="ruta/foto1c.jpg" alt="Masaje premium">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="servicio">
-    <h2 class="nombre_servicio">Tratamientos faciales</h2>
-    <div class="contenido_servicio contenido_izq">
-      <div class="carrusel">
-        <div class="carrusel_imagenes">
-          <img src="ruta/foto2.jpg" alt="Facial 1">
-          <img src="ruta/foto2b.jpg" alt="Facial 2">
-          <img src="ruta/foto2c.jpg" alt="Facial 3">
+    <!-- TRATAMIENTOS FACIALES -->
+    <section class="servicio">
+      <h2 class="nombre_servicio">Tratamientos Faciales</h2>
+
+      <div class="contenido_servicio contenido_izq">
+        <div class="carrusel">
+          <div class="carrusel_imagenes">
+            <img src="ruta/foto2.jpg" alt="Tratamiento facial">
+            <img src="ruta/foto2b.jpg" alt="Limpieza profunda">
+            <img src="ruta/foto2c.jpg" alt="Tratamiento avanzado">
+          </div>
+        </div>
+
+        <div class="descripcion_servicio">
+          Tratamientos faciales personalizados que limpian, hidratan y revitalizan la piel, devolviendo luminosidad y frescura.
+          <ul>
+            <li>Tratamiento facial completo</li>
+            <li>Tratamiento facial avanzado</li>
+            <li>Limpieza profunda + hidratación</li>
+          </ul>
         </div>
       </div>
-      <div class="descripcion_servicio">
-        Limpieza profunda, hidratación y tratamientos anti-edad con productos naturales. Devuelve luminosidad y frescura a tu piel, suavizando líneas de expresión y aportando un efecto rejuvenecedor.
-      </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- HIDROTERAPIA -->
+    <section class="servicio">
+      <h2 class="nombre_servicio">Hidroterapia</h2>
 
-  <section class="servicio">
-    <h2 class="nombre_servicio">Hidroterapia</h2>
-    <div class="contenido_servicio contenido_der">
-      <div class="descripcion_servicio">
-        Circuitos de jacuzzis, sauna y baños de vapor para relajar músculos y mejorar la circulación. Ayuda a recuperar energía y equilibrio.
-      </div>
-      <div class="carrusel">
-        <div class="carrusel_imagenes">
-          <img src="ruta/foto3.jpg" alt="Hidro 1">
-          <img src="ruta/foto3b.jpg" alt="Hidro 2">
-          <img src="ruta/foto3c.jpg" alt="Hidro 3">
+      <div class="contenido_servicio contenido_der">
+        <div class="descripcion_servicio">
+          Espacios de relajación profunda mediante agua y calor, ideales para liberar estrés y mejorar la circulación.
+          <ul>
+            <li>Acceso a hidroterapia</li>
+            <li>Jacuzzi</li>
+            <li>Sauna</li>
+            <li>Baño de vapor</li>
+            <li>Circuito de agua</li>
+            <li>Acceso ilimitado durante el horario de apertura</li>
+          </ul>
+        </div>
+
+        <div class="carrusel">
+          <div class="carrusel_imagenes">
+            <img src="ruta/foto3.jpg" alt="Jacuzzi">
+            <img src="ruta/foto3b.jpg" alt="Sauna">
+            <img src="ruta/foto3c.jpg" alt="Vapor">
+            <img src="ruta/foto3c.jpg" alt="Vapor">
+            <img src="ruta/foto3c.jpg" alt="Vapor">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- TRATAMIENTOS CORPORALES -->
+    <section class="servicio">
+      <h2 class="nombre_servicio">Tratamientos Corporales</h2>
 
-  <section class="servicio">
-    <h2 class="nombre_servicio">Tratamientos corporales</h2>
-    <div class="contenido_servicio contenido_izq">
-      <div class="carrusel">
-        <div class="carrusel_imagenes">
-          <img src="ruta/foto4.jpg" alt="Cuerpo 1">
-          <img src="ruta/foto4b.jpg" alt="Cuerpo 2">
-          <img src="ruta/foto4c.jpg" alt="Cuerpo 3">
+      <div class="contenido_servicio contenido_izq">
+        <div class="carrusel">
+          <div class="carrusel_imagenes">
+            <img src="ruta/foto4.jpg" alt="Exfoliación corporal">
+            <img src="ruta/foto4b.jpg" alt="Envoltura corporal">
+            <img src="ruta/foto4c.jpg" alt="Tratamiento corporal">
+            <img src="ruta/foto4c.jpg" alt="Tratamiento corporal">
+          </div>
+        </div>
+
+        <div class="descripcion_servicio">
+          Tratamientos que exfolian, nutren y revitalizan la piel, dejando una sensación de suavidad y bienestar.
+          <ul>
+            <li>Tratamiento corporal completo (exfoliación + envoltura)</li>
+            <li>Exfoliación corporal completa</li>
+            <li>Exfoliación o envoltura corporal ligera</li>
+            <li>Envoltura corporal de algas, barro o chocolate</li>
+          </ul>
         </div>
       </div>
-      <div class="descripcion_servicio">
-        Exfoliaciones y envolturas de chocolate, algas o barro. Tratamientos reductores y reafirmantes para tonificar y revitalizar tu cuerpo.
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="servicio">
-    <h2 class="nombre_servicio">Manicura y pedicura</h2>
-    <div class="contenido_servicio contenido_der">
- <div class="descripcion_servicio">
-        Cuidado profesional de manos y pies con exfoliación, hidratación y masajes. Relájate mientras tus uñas reciben atención experta.
-      </div>
-      <div class="carrusel">
-        <div class="carrusel_imagenes">
-          <img src="ruta/foto5.jpg" alt="Manicura 1">
-          <img src="ruta/foto5b.jpg" alt="Manicura 2">
-          <img src="ruta/foto5c.jpg" alt="Manicura 3">
+    <!-- MANICURA Y PEDICURA -->
+    <section class="servicio">
+      <h2 class="nombre_servicio">Manicura y Pedicura</h2>
+
+      <div class="contenido_servicio contenido_der">
+        <div class="descripcion_servicio">
+          Servicio de cuidado estético para manos y pies que incluye limpieza, hidratación y un momento de relajación.
+          <ul>
+            <li>Manicura</li>
+            <li>Pedicura</li>
+          </ul>
         </div>
-        
-      </div>
-    </div>
-  </section>
 
-</main>
+        <div class="carrusel">
+          <div class="carrusel_imagenes">
+            <img src="ruta/foto5.jpg" alt="Manicura">
+            <img src="ruta/foto5b.jpg" alt="Pedicura">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
 </body>
 </html>
