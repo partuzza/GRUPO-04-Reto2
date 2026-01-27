@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Planes Mensuales SPA</title>
   <link rel="stylesheet" href="formu_plan.css">
 </head>
@@ -9,25 +10,26 @@
 
 <h1>Reserva tu Plan Mensual SPA</h1>
 
-<!-- DATOS PERSONALES -->
-<form action="#" method="post" class="reserva_form">
+<form action="/reservaPlan" method="post" class="reserva_form">
+
+  <!-- DATOS PERSONALES -->
   <fieldset>
     <legend>Datos personales</legend>
 
     <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required maxlength="20">
+    <input type="text" id="nombre" name="nombreCLI" required maxlength="20">
 
     <label for="apellido">Apellido:</label>
-    <input type="text" id="apellido" name="apellido" required maxlength="20">
+    <input type="text" id="apellido" name="apellidoCLI" required maxlength="20">
 
     <label for="dni">DNI / Documento:</label>
-    <input type="text" id="dni" name="dni" required maxlength="15">
+    <input type="text" id="dni" name="dniCLI" required maxlength="15">
 
     <label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono" name="telefono" required placeholder="612345678">
+    <input type="tel" id="telefono" name="telefonoCLI" required placeholder="612345678">
 
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="emailCLI" required>
   </fieldset>
 
   <!-- PLANES MENSUALES -->
@@ -46,7 +48,7 @@
           <li>1 acceso a hidroterapia</li>
           <li>10% de descuento en servicios extra</li>
         </ul>
-        <input type="radio" name="plan_mensual" value="Classic Plan" required>
+        <input type="radio" name="plan_mensual" value="Classic_Plan" required>
       </div>
 
       <!-- Plus -->
@@ -61,7 +63,7 @@
           <li>1 acceso a hidroterapia</li>
           <li>15% de descuento en servicios extra</li>
         </ul>
-        <input type="radio" name="plan_mensual" value="Plus Plan">
+        <input type="radio" name="plan_mensual" value="Plus_Plan">
       </div>
 
       <!-- Premium -->
@@ -78,7 +80,7 @@
           <li>20% de descuento en servicios extra</li>
           <li>Beneficio sorpresa mensual</li>
         </ul>
-        <input type="radio" name="plan_mensual" value="Premium Plan">
+        <input type="radio" name="plan_mensual" value="Premium_Plan">
       </div>
 
     </div>
@@ -93,34 +95,34 @@
       <h3>Masajes</h3>
       <div class="servicios_grid">
         <div class="servicio_card">
-          <img src="imagenes/masaje_relajante.jpg" alt="Masaje Relajante">
+          <img src="img/servicios/masajerelajante.png" alt="Masaje Relajante">
           <p>Masaje relajante (45 min)</p>
-          <input type="checkbox" name="servicios_extra[]" value="Masaje relajante">
+          <input type="checkbox" name="servicios_plan[]" value="Masaje_Relajante">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/masaje_terapeutico.jpg" alt="Masaje Terapéutico">
+          <img src="img/servicios/masaje-terapeutico.jpg" alt="Masaje Terapéutico">
           <p>Masaje terapéutico (60 min)</p>
-          <input type="checkbox" name="servicios_extra[]" value="Masaje terapéutico">
+          <input type="checkbox" name="servicios_plan[]" value="Masaje_Terapeutico">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/masaje_premium.jpg" alt="Masaje Premium">
+          <img src="img/servicios/masajepremium.png" alt="Masaje Premium">
           <p>Masaje premium (90 min)</p>
-          <input type="checkbox" name="servicios_extra[]" value="Masaje premium">
+          <input type="checkbox" name="servicios_plan[]" value="Masaje_Premium">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/masaje_facial.jpg" alt="Masaje Facial y Craneal">
+          <img src="img/servicios/masajefacial.png" alt="Masaje Facial y Craneal">
           <p>Masaje facial y craneal (15-20 min)</p>
-          <input type="checkbox" name="servicios_extra[]" value="Masaje facial y craneal">
+          <input type="checkbox" name="servicios_plan[]" value="Masaje_Facial_Craneal">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/masaje_relax_descontracturante.jpg" alt="Masaje Relax o Descontracturante">
+          <img src="img/servicios/masajerelajante.png" alt="Masaje Relax o Descontracturante">
           <p>Masaje relajante o descontracturante (30 min)</p>
-          <input type="checkbox" name="servicios_extra[]" value="Masaje relajante o descontracturante">
+          <input type="checkbox" name="servicios_plan[]" value="Masaje_Relajante_Descontracturante">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/masaje_manos_pies.jpg" alt="Masaje de manos y pies">
+          <img src="img/servicios/masajepies.png" alt="Masaje de manos y pies">
           <p>Masaje de manos y pies (15-20 min)</p>
-          <input type="checkbox" name="servicios_extra[]" value="Masaje de manos y pies">
+          <input type="checkbox" name="servicios_plan[]" value="Masaje_Manos_Pies">
         </div>
       </div>
     </div>
@@ -130,34 +132,34 @@
       <h3>Hidroterapia</h3>
       <div class="servicios_grid">
         <div class="servicio_card">
-          <img src="imagenes/hidroterapia_basica.jpg" alt="Acceso Hidroterapia">
+          <img src="img/servicios/accesohidro.png" alt="Acceso Hidroterapia">
           <p>Acceso a hidroterapia</p>
-          <input type="checkbox" name="servicios_extra[]" value="Acceso a hidroterapia">
+          <input type="checkbox" name="servicios_plan[]" value="Acceso_Hidroterapia">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/hidroterapia_jacuzzi.jpg" alt="Hidroterapia Jacuzzi">
+          <img src="img/servicios/jacuzzi.png" alt="Hidroterapia Jacuzzi">
           <p>Hidroterapia jacuzzi</p>
-          <input type="checkbox" name="servicios_extra[]" value="Hidroterapia jacuzzi">
+          <input type="checkbox" name="servicios_plan[]" value="Hidro_Jacuzzi">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/hidroterapia_sauna.jpg" alt="Hidroterapia Sauna">
+          <img src="img/servicios/sauna.png" alt="Hidroterapia Sauna">
           <p>Hidroterapia sauna</p>
-          <input type="checkbox" name="servicios_extra[]" value="Hidroterapia sauna">
+          <input type="checkbox" name="servicios_plan[]" value="Hidro_Sauna">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/hidroterapia_vapor.jpg" alt="Hidroterapia Vapor">
+          <img src="img/servicios/vapor.png" alt="Hidroterapia Vapor">
           <p>Hidroterapia vapor</p>
-          <input type="checkbox" name="servicios_extra[]" value="Hidroterapia vapor">
+          <input type="checkbox" name="servicios_plan[]" value="Hidro_Vapor">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/hidroterapia_circuito.jpg" alt="Hidroterapia Circuito">
+          <img src="img/servicios/circuitohidro.png" alt="Hidroterapia Circuito">
           <p>Hidroterapia circuito de agua</p>
-          <input type="checkbox" name="servicios_extra[]" value="Hidroterapia circuito de agua">
+          <input type="checkbox" name="servicios_plan[]" value="Hidro_Circuito">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/hidroterapia_ilimitada.jpg" alt="Hidroterapia Ilimitada">
+          <img src="img/servicios/hidro.png" alt="Hidroterapia Ilimitada">
           <p>Hidroterapia ilimitada desde apertura hasta cierre</p>
-          <input type="checkbox" name="servicios_extra[]" value="Hidroterapia ilimitada">
+          <input type="checkbox" name="servicios_plan[]" value="Hidro_Ilimitada">
         </div>
       </div>
     </div>
@@ -167,19 +169,19 @@
       <h3>Tratamientos Faciales</h3>
       <div class="servicios_grid">
         <div class="servicio_card">
-          <img src="imagenes/tratamiento_facial_completo.jpg" alt="Tratamiento Facial Completo">
+          <img src="img/servicios/masajefacialcompleto.png" alt="Tratamiento Facial Completo">
           <p>Tratamiento facial completo</p>
-          <input type="checkbox" name="servicios_extra[]" value="Tratamiento facial completo">
+          <input type="checkbox" name="servicios_plan[]" value="Tratamiento_Facial_Completo">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/tratamiento_facial_avanzado.jpg" alt="Tratamiento Facial Avanzado">
+          <img src="img/servicios/facialavanzado.png" alt="Tratamiento Facial Avanzado">
           <p>Tratamiento facial avanzado</p>
-          <input type="checkbox" name="servicios_extra[]" value="Tratamiento facial avanzado">
+          <input type="checkbox" name="servicios_plan[]" value="Tratamiento_Facial_Avanzado">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/tratamiento_facial_limpieza.jpg" alt="Tratamiento Facial Limpieza">
+          <img src="img/servicios/masajefacial.png" alt="Tratamiento Facial Limpieza">
           <p>Tratamiento facial (limpieza profunda + hidratación)</p>
-          <input type="checkbox" name="servicios_extra[]" value="Tratamiento facial limpieza">
+          <input type="checkbox" name="servicios_plan[]" value="Tratamiento_Facial_Limpieza">
         </div>
       </div>
     </div>
@@ -189,47 +191,44 @@
       <h3>Tratamientos Corporales y Estética</h3>
       <div class="servicios_grid">
         <div class="servicio_card">
-          <img src="imagenes/tratamiento_corporal_completo.jpg" alt="Tratamiento Corporal Completo">
+          <img src="img/servicios/piedras.png" alt="Tratamiento Corporal Completo">
           <p>Tratamiento corporal completo (exfoliación + envoltura)</p>
-          <input type="checkbox" name="servicios_extra[]" value="Tratamiento corporal completo">
+          <input type="checkbox" name="servicios_plan[]" value="Tratamiento_Corporal_Completo">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/exfoliacion_ligera.jpg" alt="Exfoliación Ligera">
+          <img src="img/servicios/exfoliacion.png" alt="Exfoliación Ligera">
           <p>Exfoliación o envoltura corporal ligera</p>
-          <input type="checkbox" name="servicios_extra[]" value="Exfoliación ligera">
+          <input type="checkbox" name="servicios_plan[]" value="Exfoliacion_Ligera">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/exfoliacion_envoltura_completa.jpg" alt="Exfoliación + Envoltura Completa">
+          <img src="img/servicios/envoltura.png" alt="Exfoliación + Envoltura Completa">
           <p>Exfoliación + envoltura corporal completa</p>
-          <input type="checkbox" name="servicios_extra[]" value="Exfoliación + envoltura">
+          <input type="checkbox" name="servicios_plan[]" value="Exfoliacion_Envoltura_Completa">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/exfoliacion_corporal_completa.jpg" alt="Exfoliación Corporal Completa">
+          <img src="img/servicios/exfoliacioncorp.png" alt="Exfoliación Corporal Completa">
           <p>Exfoliación corporal completa</p>
-          <input type="checkbox" name="servicios_extra[]" value="Exfoliación corporal completa">
+          <input type="checkbox" name="servicios_plan[]" value="Exfoliacion_Corporal_Completa">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/envoltura_corporal.jpg" alt="Envoltura Corporal">
+          <img src="img/servicios/masajebarro.png" alt="Envoltura Corporal">
           <p>Envoltura corporal (algas, barro o chocolate)</p>
-          <input type="checkbox" name="servicios_extra[]" value="Envoltura corporal">
+          <input type="checkbox" name="servicios_plan[]" value="Envoltura_Corporal">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/manicure.jpg" alt="Manicure Spa">
+          <img src="img/servicios/manicure.png" alt="Manicure Spa">
           <p>Manicure Spa</p>
-          <input type="checkbox" name="servicios_extra[]" value="Manicure Spa">
+          <input type="checkbox" name="servicios_plan[]" value="Manicure_Spa">
         </div>
         <div class="servicio_card">
-          <img src="imagenes/pedicure.jpg" alt="Pedicure Spa">
+          <img src="img/servicios/pedicura.png" alt="Pedicure Spa">
           <p>Pedicure Spa</p>
-          <input type="checkbox" name="servicios_extra[]" value="Pedicure Spa">
+          <input type="checkbox" name="servicios_plan[]" value="Pedicure_Spa">
         </div>
       </div>
     </div>
-
   </fieldset>
-
-  <input type="submit" value="Suscribirse">
+<input type="submit" value="SUSCRIBIRSE">
 </form>
-
 </body>
 </html>

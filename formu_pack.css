@@ -9,7 +9,7 @@
 body {
   background: #f4f4f4;
   padding: 20px;
-  color: #333;
+  color: #000000;
 }
 
 /* ===== TITULO PRINCIPAL ===== */
@@ -17,7 +17,7 @@ h1 {
   text-align: center;
   font-size: 2em;
   margin-bottom: 30px;
-  color: #2c3e50;
+  color: #000000;
 }
 
 /* ===== FORMULARIO ===== */
@@ -40,7 +40,7 @@ h1 {
 .usuario_caja legend {
   font-size: 1.5em;
   font-weight: bold;
-  color: #2c3e50;
+  color: #000000;
   padding: 0 10px;
 }
 
@@ -70,7 +70,7 @@ h1 {
 .grupo_servicio_caja h2 {
   margin-bottom: 20px;
   font-size: 1.6em;
-  color: #2c3e50;
+  color: #000000;
   border-bottom: 2px solid #eee;
   padding-bottom: 5px;
 }
@@ -102,13 +102,13 @@ h1 {
 .actividad_card h3 {
   font-size: 1.1em;
   margin-bottom: 5px;
-  color: #2c3e50;
+  color: #000000;
 }
 
 .actividad_card p {
   font-size: 0.95em;
   margin-bottom: 5px;
-  color: #666;
+  color: #000000;
 }
 
 .actividad_card input[type="checkbox"] {
@@ -149,7 +149,7 @@ h1 {
 
 .pack_card h3 {
   font-size: 1.3em;
-  color: #2c3e50;
+  color: #000000;
   margin-bottom: 10px;
 }
 
@@ -166,7 +166,7 @@ h1 {
 
 .pack_card p {
   font-size: 0.95em;
-  color: #666;
+  color: #000000;
   margin-top: 5px;
 }
 
@@ -187,12 +187,17 @@ input[type="submit"] {
   border-radius: 15px;
   cursor: pointer;
   transition: background 0.3s, transform 0.3s;
+  width: 100%;      /* hace que se alargue */
+  max-width: 4000px; /* opcional: ancho máximo */
+  display: block;
+  margin: 0 auto;   /* centra el botón */
 }
 
 input[type="submit"]:hover {
   background: #2ecc71;
   transform: translateY(-3px);
 }
+
 
 /* ===== RESPONSIVE ===== */
 @media(max-width: 768px) {

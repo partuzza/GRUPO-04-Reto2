@@ -1,102 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Liora</title>
-<link rel="icon" type="image/png" href="img/isotipo1.png"  >
-<link rel="stylesheet" href="index.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liora - Planes</title>
+    <link rel="icon" type="image/png" href="img/isotipo1.png">
+    <link rel="stylesheet" href="packs.css">
 </head>
 <body>
+    <section class="banner-video">
+        <video autoplay muted loop class="video-banner">
+            <source src="img/video.mp4" type="video/mp4">
+        </video>
 
-<section class="banner-video">
-    <video autoplay muted loop class="video-banner">
-        <source src="img/video.mp4" type="video/mp4">
-    </video>
-
-    <!-- MENÚ dentro del banner -->
-<header class="barra-navegacion">
-    <div class="logo">
-        <img src="img/logotipo.png" alt="logotipo liora">
-    </div>
-    <ul class="menu">
-        <li class="menu_login">
-            <a href="Spa.html">Spa ▾</a>
-            <ul class="submenu_login">
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="packs.html">Packs</a></li>
-                <li><a href="planes.html">Planes</a></li>
+        <header class="barra-navegacion">
+            <div class="logo">
+                <img src="img/logotipo.png" alt="logotipo liora">
+            </div>
+            <ul class="menu">
+                <li class="menu_login">
+                    <a href="Spa.html">Spa ▾</a>
+                    <ul class="submenu_login">
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="packs.html">Packs</a></li>
+                        <li><a href="planes.html">Planes</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#">Restaurante</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="menu_login">
+                    <a href="#">Login ▾</a>
+                    <ul class="submenu_login">
+                        <li><a href="loginUSU.html">Usuario</a></li>
+                        <li><a href="loginCLI.html">Operador</a></li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="#">Restaurante</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-
-        <li class="menu_login">
-            <a href="#">Login ▾</a>
-            <ul class="submenu_login">
-                <li><a href="loginUSU.html">Usuario</a></li>
-                <li><a href="loginCLI.html">Operador</a></li>
-            </ul>
-        </li>
-    </ul>
-</header>
-</section>
-
-
- <!-- SERVICIOS -->
-    <h1>Disfruta de nuestros <strong>servicios</strong></h1>
-    <hr>
-    <div class="contenedor-boton">
-    <a href="servicios.html" class="boton-servicios">
-    Más información sobre nuestros servicios
-    </a>
-    </div>
-   <section class="contenedor-seccion">
-    <div class="carrusel-infinito">
-        <div class="carrusel-track">
-            <div class="tarjeta">
-                <img src="img/masaje.png" alt="Masaje">
-                <div class="tarjeta-info"><h2>Masajes relajantes</h2><p>Relajación total</p></div>
-            </div>
-            <div class="tarjeta">
-                <img src="img/hidroterapia.png" alt="Hidroterapia">
-                <div class="tarjeta-info"><h2>Hidroterapia</h2><p>El agua renueva tu bienestar</p></div>
-            </div>
-            <div class="tarjeta">
-                <img src="img/servicios/piedras.png" alt="Tratamiento corporal">
-                <div class="tarjeta-info"><h2>Tratamiento corporal</h2><p>Renueva tu cuerpo</p></div>
-            </div>
-            <div class="tarjeta">
-                <img src="img/tratamientofacial.png" alt="Facial">
-                <div class="tarjeta-info"><h2>Tratamiento facial</h2><p>Piel radiante</p></div>
-            </div>
-            <div class="tarjeta">
-                <img src="img/exfoliacion.png" alt="Exfoliacion">
-                <div class="tarjeta-info"><h2>Exfoliación</h2><p>Renueva tu piel, libera tu brillo</p></div>
-            </div>
-            <div class="tarjeta">
-                <img src="img/servicios/manicure.png" alt="Manicura">
-                <div class="tarjeta-info"><h2>Manicura</h2><p>Tu esencia reflejada en la punta de tus dedos</p></div>
-            </div>
-            <div class="tarjeta">
-                <img src="img/servicios/pedicura.png" alt="Pedicura">
-                <div class="tarjeta-info"><h2>Pedicura</h2><p>El descanso que tus pies piden</p></div>
-        </div>
-         </div>
-          </div>
-</section>
-     <!-- PACKS -->
-    <section class="contenedor-planes">
+        </header>
+    </section>
+<section class="contenedor-planes">
     <h1>Todo lo que necesitas, en un solo <strong>pack</strong> diseñado para ti</h1>
     <hr>
-     <div class="contenedor-boton">
-    <a href="packs.html" class="boton-servicios">
-    Más información sobre nuestros packs
-    </a>
      <section class="contenedor-planes"></section>
     <div class="tarjetas-packs">
          <div class="tarjeta-p"><h2>Pack Relax Express</h2>
@@ -172,58 +117,8 @@
            </div>
     </section>
 
- <!-- PLANES -->
-    <h1>Planes mensuales</h1>
-    <hr>
-    <div class="contenedor-boton">
-    <a href="planes.html" class="boton-servicios">
-    Más información sobre nuestros planes
-    </a>
-    </div>
-    <section class="tarjetas-plan">
-        <div class="plan"><h2> Classic</h2>
-        <p><em>“Relájate sin complicaciones”</em></p>
-        <img src="img/plan/plan1.png" alt="Plan Classic">
-        <h3>Servicios incluidos</h3>
-            <ul class="lista">
-            <li>1 masaje relajante (45 min) al mes</li>
-            <li>1 acceso a hidroterapia</li>
-            </ul>
-             <h4><strong>10% de descuento en servicios extra</strong></h4>
-        </div>
-        
-    </div>
-    <div class="plan "><h2> Plus</h2>
-    <p><em>“Bienestar equilibrado”</em></p>
-        <img src="img/plan/plan2.png" alt="Plan Plus">
-     <h3>Servicios incluidos</h3>
-            <ul class="lista">
-            <li>1 masaje terapéutico (60 min) al mes</li>
-            <li>1 tratamiento facial completo</li>
-            <li>1 exfoliación o envoltura corporal ligera</li>
-            <li>1 acceso a hidroterapia</li>
-            </ul>
-            <h4><strong>15% de descuento en servicios extra</strong></h4>
-            </div>
-
-    <div class="plan"><h2> Premium</h2>
-        <p><em>“Experiencia total y lujo”</em></p>
-        <img src="img/plan/plan3.png" alt="Plan Premium">
-     <h3>Servicios incluidos</h3>
-            <ul class="lista">
-            <li>1 masaje premium (90 min) al mes</li>
-            <li>1 tratamiento facial avanzado</li>
-            <li>1 tratamiento corporal completo (exfoliación + envoltura)</li>
-            <li>1 manicure o pedicure spa</li>
-            <li>Acceso ilimitado a hidroterapia</li>
-            </ul>
-            <h4><strong>20% de descuento en servicios extra</strong></h4>
-            <h4><strong>Beneficio sorpresa mensual (aromaterapia especial, bebida detox, etc.)</strong></h4>
-        </div>
-
-</section>
+   
 </body>
-
 <footer class="footer">
   <div class="footer-container">
 
@@ -303,3 +198,5 @@
   </div>
 </footer>
 
+
+</html>

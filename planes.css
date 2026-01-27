@@ -561,7 +561,7 @@ p{
   transition: transform 0.3s ease;
 }
 
-/* RESPONSIVE FOOTER */
+/* RESPONSIVE */
 @media (max-width: 600px) {
   .footer {
     padding: 45px 15px 20px;

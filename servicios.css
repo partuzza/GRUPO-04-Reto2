@@ -201,3 +201,19 @@ body {
 .submenu_login li a:hover {
   background: #f0f0f0;
 }
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .footer {
+    padding: 45px 15px 20px;
+  }
+
+  .gallery-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .gallery-links img {
+    max-width: 100px;
+    margin: auto;
+  }
+}

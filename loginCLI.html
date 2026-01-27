@@ -2,15 +2,14 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Cliente</title>
-  <link rel="stylesheet" href="loginUSUCLI.css">
+  <title>Login Usuario</title>
+  <link rel="stylesheet" href="loginCLITRA.css">
 </head>
 <body>
   <!-- Video de fondo -->
   <video autoplay muted loop id="video-fondo">
     <source src="img/video blur.mp4" type="video/mp4">
-   
+    Tu navegador no soporta video.
   </video>
 
   <div class="header_fijo">
@@ -25,14 +24,15 @@
   </div>
 
   <div class="login_form_contenedor">
-    <h2>bienvenido Operador</h2>
-    <img src="img/opelogo_login.svg" class="img" alt="logoOp">
-    <form class="login_form">
-      <input type="text" name="usuariousuario" placeholder="Usuario" required>
-      <input type="password" name="passwordusuario" placeholder="Contraseña" required>
-      <button type="submit" formaction="datos.html">Ingresar</button>
+    <h2>Bienvenido Usuario</h2>
+    <img src="img/clientelogo_login.png" class="img" alt="logoUsu">
+    <form class="login_form" action="/loginCLI" method="post">
+      <input type="text" name="usuarioCLI" placeholder="Usuario" required>
+      <input type="password" name="contrasenaCLI" placeholder="Contraseña" required>
+      <button type="submit">Ingresar</button>
     </form>
   </div>
-</body>
 
+</body>
 </html>
+

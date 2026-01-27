@@ -29,32 +29,51 @@ body{
     font-size: 100px;
 }
 
-.fotosnosotros{
-    display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
-  background-color: rgb(255, 0, 0);
+.fotosnosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(255, 255, 255);
   padding: 5px;
   gap: 5px;
-  width: 800px;       /* ancho del grid */
-  margin: auto;  /* esto es pa centrar el grid */
-  transition: transform 0.3s ease
+  width: 800px;
+  margin: auto;
+  border-radius: 8px;
+  overflow: hidden; /* evita que el escalado descoloque el grid */
 }
-.fotosnosotros div {
-  background-color: #f1f1f1;
+
+.fotosnosotros > div {
+  background-color: #dddddd;
   color: #000;
   padding: 10px;
   font-size: 30px;
   text-align: center;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+.fotosnosotros > div:hover {
+  transform: scale(1.02);        /* escala muy ligera */
+  background-color: #cccccc;     /* cambio de color */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra suave */
+}
+
+
 .Nahia {
     display: flex;
     grid-column-start: 1;
-    grid-column-end: 3;
-
+    grid-column-end: 3;	
 }
 
+.NahiaImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
 .Nahia img {
-padding-left: 38px; 
+/*padding-left: 38px; */
 }
 
 .Paul {
@@ -64,7 +83,7 @@ padding-left: 38px;
 
 .Sara{
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 3;;
 }
 
 .Sebastian{
@@ -89,7 +108,7 @@ padding-left: 38px;
     text-align: justify;      /* párrafo justificado */}
 
 .portada-container {
-    width: 100vw;                       /* ocupa todo el ancho de la pantalla */
+    width: 100%;                       /* ocupa todo el ancho de la pantalla */
     height: 50vh;                        /* altura: mitad de la pantalla */
     background-image: url('img/frontal - para portada.png'); /* tu imagen */
     background-size: cover;              /* llena el contenedor sin deformarse */
@@ -101,3 +120,33 @@ h1 {
 font-size: 2rem;
 }
 
+.fotogit {
+    width: 30px !important;
+    height: 30px !important;
+    vertical-align: left;
+    flex-direction: column;   
+    align-items: center;
+
+
+}
+.fotogit:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.fotolinkedin {
+    width: 30px;
+    height: 30px;
+    vertical-align: left;
+    flex-direction: column;   
+    align-items: center;
+
+}
+.fotolinkedin:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+a {
+    text-decoration: none;
+}
