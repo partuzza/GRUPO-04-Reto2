@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Liora</title>
+    <link rel="icon" type="image/png" href="img/isotipo1.png">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+   <!-- ===== HEADER ===== -->
+<section class="banner-video">
+        <video autoplay muted loop class="video-banner">
+            <source src="img/video.mp4" type="video/mp4">
+        </video>
+
+        <header class="barra-navegacion">
+        <div class="logo">
+        <a href="index.html" style="display: block; line-height: 0;">
+        <img src="img/logotipo.png" alt="logotipo liora" style="height: 60px; width: auto;">
+        </a>
+        </div>
+            <ul class="menu">
+                <li class="menu_login">
+                    <a href="Spa.html">Spa ▾</a>
+                    <ul class="submenu_login">
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="packs.html">Packs</a></li>
+                        <li><a href="planes.html">Planes</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#">Restaurante</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="menu_login">
+                    <a href="#">Login ▾</a>
+                    <ul class="submenu_login">
+                        <li><a href="loginUSU.html">Usuario</a></li>
+                        <li><a href="loginCLI.html">Operador</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+    </section>
+
+    <section class="contacto-layout">
+        
+        <div class="form-container">
+            <h2>Póngase en contacto con nosotros mediante este formulario</h2>
+            
+            <form action="https://formspree.io/f/TU_ID_AQUI" method="POST" class="contact-form">
+                
+                <div class="form-group">
+                    <label for="nombre">Tu nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Tu correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Tu mensaje (opcional)</label>
+                    <textarea id="mensaje" name="mensaje" rows="8"></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar</button>
+
+            </form>
+        </div>
+        <div class="map-section">
+            <h2>Encuéntranos:</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5804.880673752807!2d-1.980306274731268!3d43.32597397353477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51a545ed2e1be9%3A0xa635d76ac3894843!2sPlaya%20de%20Zurriola!5e0!3m2!1ses!2ses!4v1769423848285!5m2!1ses!2ses" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Columna 1: Logo -->
+    <div class="logo-footer">
+      <img src="img/Logotipo.png" alt="Logotipo Liora">
+    </div>
+
+   
+    <!-- Columna 2: Redes sociales y correo -->
+<div class="footer-col">
+  <h4>Contáctanos</h4>
+  <div class="social-links">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/profile.php?id=61586904551436&locale=es_ES
+" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#1877F2" viewBox="0 0 24 24">
+        <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24H12.82V14.706h-3.2v-3.605h3.2V8.41c0-3.168 1.932-4.892 4.76-4.892 1.354 0 2.52.101 2.86.146v3.316l-1.963.001c-1.539 0-1.838.732-1.838 1.805v2.37h3.677l-.479 3.605h-3.198V24h6.275c.728 0 1.325-.597 1.325-1.324V1.325C24 .597 23.403 0 22.675 0z"/>
+      </svg>
+      Facebook
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/lioraspass/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#E1306C" viewBox="0 0 24 24">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.342 3.608 1.317.975.975 1.255 2.242 1.317 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.07 4.85c-.062 1.366-.342 2.633-1.317 3.608-.975.975-2.242 1.255-3.608 1.317-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.342-3.608-1.317-.975-.975-1.255-2.242-1.317-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.342-2.633 1.317-3.608C4.525 2.505 5.792 2.225 7.158 2.163 8.424 2.105 8.804 2.094 12 2.094m0-2.163C8.741-.069 8.332-.058 7.052.001 5.775.058 4.598.357 3.635 1.321 2.671 2.284 2.372 3.46 2.314 4.737 2.255 6.017 2.244 6.426 2.244 12c0 5.574.011 5.983.07 7.263.058 1.277.357 2.454 1.321 3.417.963.964 2.14 1.263 3.417 1.321 1.28.059 1.689.07 7.263.07s5.983-.011 7.263-.07c1.277-.058 2.454-.357 3.417-1.321.964-.963 1.263-2.14 1.321-3.417.059-1.28.07-1.689.07-7.263s-.011-5.983-.07-7.263c-.058-1.277-.357-2.454-1.321-3.417-.963-.964-2.14-1.263-3.417-1.321C17.983-.069 17.574-.08 12-.08z"/>
+        <path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998z"/>
+        <circle cx="18.406" cy="5.594" r="1.44"/>
+      </svg>
+      Instagram
+    </a>
+
+    <!-- Correo electrónico -->
+    <a href=" lioraspainc@gmail.com" aria-label="Correo electrónico">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#6B7280" viewBox="0 0 24 24">
+        <path d="M12 13.065L0 4.5V20.25C0 21.215.785 22 1.75 22h20.5c.965 0 1.75-.785 1.75-1.75V4.5l-12 8.565zM12 11L24 2H0l12 9z"/>
+      </svg>
+      lioraspainc@gmail.com
+    </a>
+  </div>
+</div>
+
+
+    <!-- Columna 3: Galería + links -->
+    <div class="footer-col">
+      <h4>Galería</h4>
+      <ul class="gallery-links">
+        <li>
+          <a href="servicios.html">Servicios</a>
+          <img src="img/servicios/exfoliacion.png" alt="Servicios">
+        </li>
+        <li>
+          <a href="packs.html">Packs</a>
+          <img src="img/pack/pack4.png" alt="Packs">
+        </li>
+        <li>
+          <a href="planes.html">Planes</a>
+          <img src="img/plan/plan3.png" alt="Planes">
+        </li>
+      </ul>
+    </div>
+
+    <!-- Columna 4: Mapa -->
+    <div class="footer-col">
+      <h4>Nuestra ubicación</h4>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5804.880673752807!2d-1.980306274731268!3d43.32597397353477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51a545ed2e1be9%3A0xa635d76ac3894843!2sPlaya%20de%20Zurriola!5e0!3m2!1ses!2ses!4v1769423848285!5m2!1ses!2ses"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Liora. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+</html>
