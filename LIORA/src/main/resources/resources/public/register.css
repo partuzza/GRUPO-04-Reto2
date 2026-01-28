@@ -1,0 +1,200 @@
+:root{
+  --color-1: #f3eee5; /* fondo principal */
+  --color-2: #D6E7EE; /* hover menú, fondo overlay */
+  --color-3: #e9f5e9; /* hover botón, input focus */
+  --color-4: #ebecec; /* fondo header, contenedores claros */
+  
+  /* opcionales derivados, mismos nombres con carácter */
+  --color-1-dark: rgba(243,238,229,0.8); /* semitransparente para contenedores */
+  --color-2-dark: #b0d0e0; /* hover más marcado si se quiere */
+  --color-3-dark: rgba(233,245,233,0.6); /* hover botón más visible */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Calibri', Arial, sans-serif;
+}
+
+body {
+  padding-top: 100px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2f2f2f;
+}
+
+#video-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1;       
+}
+
+.img {
+  width: 100px;      
+  height: auto;     
+  max-width: 100%;   
+}
+
+.header_fijo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.titulo_header h1 {
+  font-size: 2em;
+  color: #2f2f2f;
+}
+
+.nav_menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav_menu ul li a {
+  text-decoration: none;
+  color: #2f2f2f;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.login_form_contenedor {
+  background: rgba(243, 238, 229, 0.555);
+  padding: 35px 50px; /* más compacto */
+  border-radius: 35px;
+  width: 700px;
+  max-width: 90%;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.login_form_contenedor:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+.login_form_contenedor h2 {
+  margin-bottom: 18px; /* menos separación */
+  color: #ffffff;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
+.login_form_contenedor .img {
+  width: 80px;
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+/* Formulario principal */
+.login_form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* menos separación vertical */
+}
+
+/* Filas de dos columnas */
+.form_row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.form_group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_group.full_width {
+  flex: 100%;
+}
+
+/* Labels compactos */
+.login_form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 0.95em;
+  color: #2f2f2f;
+  text-align: left;
+}
+
+/* Inputs */
+.login_form input {
+  padding: 10px 12px;
+  font-size: 0.95em;
+  border: 1px solid #A7ACAE; 
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.login_form input:focus {
+  border-color: var(--color-3);
+  box-shadow: 0 0 10px var(--color-3-dark);
+  outline: none;
+}
+
+/* Botón de enviar */
+.login_form button {
+  padding: 12px;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.login_form button:hover {
+  background: var(--color-2-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    padding-top: 120px;
+  }
+
+  .login_form_contenedor {
+    padding: 40px 30px;
+    width: 90%;
+  }
+
+  .titulo_header h1 {
+    font-size: 1.5em;
+  }
+
+  .nav_menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form_row {
+    flex-direction: column; /* en móvil, las columnas se apilan */
+  }
+}

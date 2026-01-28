@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Usuario</title>
+  <link rel="stylesheet" href="loginCLITRA.css">
+</head>
+<body>
+  <!-- Video de fondo -->
+  <video autoplay muted loop id="video-fondo">
+    <source src="img/video blur.mp4" type="video/mp4">
+    Tu navegador no soporta video.
+  </video>
+
+  <div class="header_fijo">
+    <div class="titulo_header"><h1>Mi cuenta</h1></div>
+    <nav class="nav_menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="login_form_contenedor">
+    <h2>Bienvenido Usuario</h2>
+    <img src="img/clientelogo_login.png" class="img" alt="logoUsu">
+    <form class="login_form" action="/loginCLI" method="post">
+      <input type="text" name="usuarioCLI" placeholder="Usuario" required>
+      <input type="password" name="contrasenaCLI" placeholder="Contraseña" required>
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
+
+</body>
+</html>
+

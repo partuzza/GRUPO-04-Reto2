@@ -1,0 +1,203 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 80px 20px 20px 20px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+/* ===== FORMULARIO ===== */
+.reserva_form {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.reserva_form fieldset {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.reserva_form legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000000;
+}
+
+.reserva_form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #000000e8;
+}
+
+.reserva_form input[type="text"],
+.reserva_form input[type="email"],
+.reserva_form input[type="tel"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+/* ===== PLANES ===== */
+.planes_grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plan_card {
+  width: 300px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan_card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.plan_card h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.plan_card p {
+  color: #000000;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+}
+
+.plan_card ul {
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 0.95em;
+}
+
+.plan_card input[type="radio"] {
+  transform: scale(1.2);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.plan_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== SERVICIOS EXTRA ===== */
+.grupo_servicio {
+  margin-top: 20px;
+}
+
+.grupo_servicio h3 {
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.servicios_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.servicio_card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servicio_card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.servicio_card p {
+  font-size: 0.9em;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.servicio_card input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.servicio_card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== BOTÓN SUSCRIBIRSE ===== */
+input[type="submit"] {
+  background: #27ae60;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 15px 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  width: 100%;      /* hace que se alargue */
+  max-width: 4000px; /* opcional: ancho máximo */
+  display: block;
+  margin: 0 auto;   /* centra el botón */
+}
+
+input[type="submit"]:hover {
+  background: #2ecc71;
+  transform: translateY(-3px);
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  .reserva_form {
+    padding: 20px;
+  }
+
+  .planes_grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

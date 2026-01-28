@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Operador</title>
+  <link rel="stylesheet" href="loginCLITRA.css">
+</head>
+<body>
+  <!-- Video de fondo -->
+  <video autoplay muted loop id="video-fondo">
+    <source src="img/video blur.mp4" type="video/mp4">
+  </video>
+
+  <div class="header_fijo">
+    <div class="titulo_header"><h1>Mi cuenta</h1></div>
+    <nav class="nav_menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="login_form_contenedor">
+    <h2>Bienvenido Operador</h2>
+    <img src="img/opelogo_login.svg" class="img" alt="logoOp">
+    <form class="login_form" action="/loginTRA" method="post">
+      <input type="text" name="usuarioTRA" placeholder="Usuario" required>
+      <input type="password" name="contrasenaTRA" placeholder="Contraseña" required>
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
+</body>
+</html>
