@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes Mensuales SPA</title>
+  <link rel="stylesheet" href="formu_plan.css">
+</head>
+<body>
+
+<h1>Reserva tu Plan Mensual SPA</h1>
+
+<form action="/reservaPlan" method="post" class="reserva_form">
+<!-- campo oculto para enviar el nombre del cliente -->
+
+<label>Nombre del cliente:</label><br>
+<input type="text" name="nombreCLI" value="usuarioCLI">
+
+<label>Fecha inicio:</label><br>
+<input type="date" name="fecha_ini" required><br><br>
+
+  <!-- PLANES MENSUALES -->
+  <fieldset>
+    <legend>Planes Mensuales</legend>
+
+    <div class="planes_grid">
+
+      <!-- Classic -->
+      <div class="plan_card">
+        <img src="img/plan/plan1.png" alt="Classic Plan">
+        <h3>Classic – Plan Mensual</h3>
+        <p>“Relájate sin complicaciones”</p>
+        <ul>
+          <li>1 masaje relajante (45 min) al mes</li>
+          <li>1 acceso a hidroterapia</li>
+          <li>10% de descuento en servicios extra</li>
+        </ul>
+        <input type="radio" name="plan_mensual" value="Classic_Plan" required>
+      </div>
+
+      <!-- Plus -->
+      <div class="plan_card">
+        <img src="img/plan/plan2.png"  alt="Plus Plan">
+        <h3>Plus – Plan Mensual</h3>
+        <p>“Bienestar equilibrado”</p>
+        <ul>
+          <li>1 masaje terapéutico (60 min) al mes</li>
+          <li>1 tratamiento facial completo</li>
+          <li>1 exfoliación o envoltura corporal ligera</li>
+          <li>1 acceso a hidroterapia</li>
+          <li>15% de descuento en servicios extra</li>
+        </ul>
+        <input type="radio" name="plan_mensual" value="Plus_Plan">
+      </div>
+
+      <!-- Premium -->
+      <div class="plan_card">
+        <img src="img/plan/plan3.png"  alt="Premium Plan">
+        <h3>Premium – Plan Mensual</h3>
+        <p>“Experiencia total y lujo”</p>
+        <ul>
+          <li>1 masaje premium (90 min) al mes</li>
+          <li>1 tratamiento facial avanzado</li>
+          <li>1 tratamiento corporal completo (exfoliación + envoltura)</li>
+          <li>1 manicure o pedicure spa</li>
+          <li>Acceso ilimitado a hidroterapia</li>
+          <li>20% de descuento en servicios extra</li>
+          <li>Beneficio sorpresa mensual</li>
+        </ul>
+        <input type="radio" name="plan_mensual" value="Premium_Plan">
+      </div>
+
+    </div>
+  </fieldset>
+
+<input type="submit" value="SUSCRIBIRSE">
+</form>
+</body>
+</html>
