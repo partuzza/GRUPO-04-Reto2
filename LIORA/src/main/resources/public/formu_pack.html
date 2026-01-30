@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reserva SPA - Actividades y Packs</title>
+  <link rel="stylesheet" href="formu_pack.css">
+</head>
+<body>
+
+  <!-- ACTIVIDADES INDIVIDUALES -->
+<h1>Reserva tu experiencia SPA</h1>
+
+<form class="reserva_form" action="/reservaPack" method="post">
+
+<label>Nombre del cliente:</label><br>
+<input type="text" name="nombreCLI" value="usuarioCLI">
+
+<label>Fecha y hora de la reserva:</label><br>
+<input type="datetime-local" name="fecha_reserva" required><br><br>
+  <fieldset class="usuario_caja">
+    <legend>Actividades Individuales</legend>
+
+    <!-- MASAJES -->
+    <div class="grupo_servicio_caja">
+      <h2>Masajes</h2>
+      <div class="actividades_grid">
+        <div class="actividad_card">
+          <img src="img/servicios/masajerelajante.png" alt="Masaje Relajante">
+          <h3>Masaje Relajante</h3>
+          <p>45 min | 30€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Masaje_Relajante">
+        </div>
+
+        <div class="actividad_card">
+          <img src="img/servicios/masaje-terapeutico.jpg" alt="Masaje Terapéutico">
+          <h3>Masaje Terapéutico</h3>
+          <p>60 min | 50€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Masaje Terapeutico">
+        </div>
+
+        <div class="actividad_card">
+          <img src="img/servicios/masajepremium.png" alt="Masaje Premium">
+          <h3>Masaje Premium</h3>
+          <p>60-90 min | 70€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Masaje Premium">
+        </div>
+
+        <div class="actividad_card">
+          <img src="img/servicios/masajefacial.png" alt="Masaje Facial y Craneal">
+          <h3>Masaje Facial y Craneal</h3>
+          <p>15-20 min | 25€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Masaje_Facial_Craneal">
+        </div>
+
+        <div class="actividad_card">
+          <img src="img/servicios/masajerelajante.png" alt="Masaje Relajante o Descontracturante">
+          <h3>Masaje Relajante o Descontracturante</h3>
+          <p>30 min | 30€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Masaje_Relajante_Descontracturante">
+        </div>
+
+        <div class="actividad_card">
+          <img src="img/servicios/masaje-terapeutico.jpg" alt="Masaje Terapéutico o Deportivo">
+          <h3>Masaje Terapéutico o Deportivo</h3>
+          <p>60 min | 50€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Masaje_Terapeutico_Deportivo">
+        </div>
+
+        <div class="actividad_card">
+          <img src="img/servicios/masajepies.png" alt="Masaje de Manos y Pies">
+          <h3>Masaje de Manos y Pies</h3>
+          <p>15-20 min | 25€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Masaje_Manos_Pies">
+        </div>
+      </div>
+    </div>
+
+    <!-- HIDROTERAPIA -->
+    <div class="grupo_servicio_caja">
+      <h2>Hidroterapia</h2>
+      <div class="actividades_grid">
+        <div class="actividad_card">
+          <img src="img/servicios/accesohidro.png" alt="Acceso a Hidroterapia">
+          <h3>Acceso a Hidroterapia</h3>
+          <p>30 min | 15€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Acceso_Hidroterapia">
+        </div>
+        <div class="actividad_card">
+          <img src="img/servicios/jacuzzi.png"  alt="Hidroterapia Jacuzzi">
+          <h3>Hidroterapia Jacuzzi</h3>
+          <p>30 min | 20€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Hidro_Jacuzzi">
+        </div>
+        <div class="actividad_card">
+          <img src="img/servicios/sauna.png" alt="Hidroterapia Sauna">
+          <h3>Hidroterapia Sauna</h3>
+          <p>30 min | 20€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Hidro_Sauna">
+        </div>
+        <div class="actividad_card">
+          <img src="img/servicios/vapor.png"  alt="Hidroterapia Vapor">
+          <h3>Hidroterapia Vapor</h3>
+          <p>30 min | 20€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Hidro_Vapor">
+        </div>
+        <div class="actividad_card">
+          <img src="img/servicios/circuitohidro.png"  alt="Hidroterapia Circuito de Agua">
+          <h3>Hidroterapia Circuito de Agua</h3>
+          <p>30 min | 20€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Hidro_Circuito">
+        </div>
+        <div class="actividad_card">
+          <img src="img/servicios/hidro.png"  alt="Hidroterapia Ilimitada">
+          <h3>Hidroterapia Ilimitada</h3>
+          <p>Sesión completa | 35€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Hidro_Ilimitada">
+        </div>
+      </div>
+    </div>
+
+    <!-- TRATAMIENTO FACIAL -->
+    <div class="grupo_servicio_caja">
+      <h2>Tratamiento Facial</h2>
+      <div class="actividades_grid">
+        <div class="actividad_card">
+          <img src="img/servicios/masajefacialcompleto.png" alt="Tratamiento Facial Completo">
+          <h3>Tratamiento Facial Completo</h3>
+          <p>60 min | 40€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Tratamiento_Facial_Completo">
+        </div>
+        <div class="actividad_card">
+          <img src="img/servicios/facialavanzado.png" alt="Tratamiento Facial Avanzado">
+          <h3>Tratamiento Facial Avanzado</h3>
+          <p>60 min | 60€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Tratamiento_Facial_Avanzado">
+        </div>
+        <div class="actividad_card">
+          <img src="img/servicios/masajefacial.png" alt="Tratamiento Facial Limpieza">
+          <h3>Tratamiento Facial (Limpieza + Hidratación)</h3>
+          <p>60 min | 40€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Tratamiento_Facial_Limpieza">
+        </div>
+      </div>
+    </div>
+
+    <!-- TRATAMIENTO CORPORAL -->
+    <div class="grupo_servicio_caja">
+      <h2>Tratamiento Corporal</h2>
+      <div class="actividades_grid">
+        <div class="actividad_card">
+          <img src="img/servicios/piedras.png" alt="Tratamiento Corporal Completo">
+          <h3>Tratamiento Corporal Completo</h3>
+          <p>50 min | 45€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Tratamiento_Corporal_Completo">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXFOLIACIONES -->
+    <div class="grupo_servicio_caja">
+      <h2>Exfoliaciones</h2>
+      <div class="actividades_grid">
+        <div class="actividad_card">
+          <img src="img/servicios/exfoliacion.png" alt="Exfoliación Ligera">
+          <h3>Exfoliación/Envoltura Ligera</h3>
+          <p>30 min | 25€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Exfoliacion_Ligera">
+        </div>
+        <div class="actividad_card">
+          <img src="img/servicios/envoltura.png" alt="Exfoliación + Envoltura Completa">
+          <h3>Exfoliación + Envoltura Corporal Completa</h3>
+          <p>50 min | 45€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Exfoliacion_Envoltura_Completa">
+        </div>
+        <div class="actividad_card">
+          <img src="img/servicios/exfoliacioncorp.png" alt="Exfoliación Corporal Completa">
+          <h3>Exfoliación Corporal Completa</h3>
+          <p>45 min | 35€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Exfoliacion_Corporal_Completa">
+        </div>
+        <div class="actividad_card">
+          <img src="img/servicios/masajebarro.png" alt="Envoltura Corporal">
+          <h3>Envoltura Corporal (Algas, Barro o Chocolate)</h3>
+          <p>40 min | 30€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Envoltura_Corporal">
+        </div>
+      </div>
+    </div>
+
+    <!-- MANICURA -->
+    <div class="grupo_servicio_caja">
+      <h2>Manicura</h2>
+      <div class="actividades_grid">
+        <div class="actividad_card">
+          <img src="img/servicios/manicure.png" alt="Manicure Spa">
+          <h3>Manicure Spa</h3>
+          <p>30 min | 20€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Manicure_Spa">
+        </div>
+      </div>
+    </div>
+
+    <!-- PEDICURE -->
+    <div class="grupo_servicio_caja">
+      <h2>Pedicure</h2>
+      <div class="actividades_grid">
+        <div class="actividad_card">
+          <img src="img/servicios/pedicura.png" alt="Pedicure Spa">
+          <h3>Pedicure Spa</h3>
+          <p>30 min | 20€</p>
+          <input type="checkbox" name="servicios_pack[]" value="Pedicure_Spa">
+        </div>
+      </div>
+    </div>
+
+  </fieldset>
+
+
+<input type="submit" value="Resevar">
+</form>
+</body>
+</html>

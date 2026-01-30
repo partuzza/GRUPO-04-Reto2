@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>registrarse Usuario</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <!-- Video de fondo -->
+  <video autoplay muted loop id="video-fondo">
+    <source src="img/video blur.mp4" type="video/mp4">
+    Tu navegador no soporta video.
+  </video>
+
+  <div class="header_fijo">
+    <div class="titulo_header"><h1>Registrarse</h1></div>
+    <nav class="nav_menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="login_form_contenedor">
+    <h2>Nuevo Usuario</h2>
+    <img src="img/clientelogo_login.png" class="img" alt="logoUsu">
+    <form class="login_form" action="/register" method="post">
+ <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombreCLI" required maxlength="20">
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellidoCLI" required maxlength="20">
+
+    <label for="fecha_nac">Fecha de nacimiento:</label>
+<input type="date" id="fecha_nac" name="fecha_nacCLI" required>
+
+
+    <label for="dni">DNI / Documento:</label>
+    <input type="text" id="dni" name="dniCLI" required maxlength="15">
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefonoCLI" required placeholder="612345678">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="emailCLI" required>
+     <label for="usuarioCLI">Usuario:</label>
+      <input type="text" name="usuarioCLI" placeholder="Usuario" required>
+           <label for="contrasenaCLI">Contraseña:</label>
+      <input type="password" name="contrasenaCLI" placeholder="Contraseña" required>
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
